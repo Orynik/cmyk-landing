@@ -1,5 +1,12 @@
+:root{
+  --yellow-blue-gradient: linear-gradient(315deg, #72AFFF 0%, #FFF01F 100%);
+  --purple-pink-gradient: linear-gradient(-120deg,#209CFB,#FF3099);
+}
+
 body{
   background: #fff;
+
+  overflow-x: hidden;
 }
 
 /* Dark-theme */
@@ -48,23 +55,237 @@ body{
 
 /* Вторая секция */
 
+.about-platforms{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .platforms-section{
-  height: 800px;
+  position: relative;
+
   background-size: 20% 100%;
   background-position-x: 100%;
   background-repeat: no-repeat;
   background-image: url(../assets/backgroundBox_2.png);
 }
 
-.about-platforms--title {
-  margin-top: 200px
+.platforms-section::before{
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url(../assets/section_1.png);
 }
 
-.about-platforms--title::before{
-  background-image: url(../assets/cmyk.png);
-  background-size: 10px 20px;
-  display: inline-block;
-  width: 10px;
-  height: 20px;
-  content:"";
+.about-platforms--title {
+  padding-top: 200px;
+  padding-bottom: 50px;
+  width: 650px;
+
+  text-align: center;
+}
+
+.platforms-section--describe
+{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-left: -150px;
+  flex-direction: column;
+}
+
+.platforms-section--describe-text{
+  margin-bottom: 50px;
+  position: relative;
+
+  width: 400px;
+}
+
+/* Вторая секция Glass effect для иконок секций */
+
+.platforms-section--icons{
+  position: absolute;
+  top: -15px;
+  left: -110px;
+}
+
+.platforms-section--icons__background{
+  position: relative;
+
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.platforms-section--icons__background.discord-block{
+  background: var(--yellow-blue-gradient)
+}
+
+.platforms-section--icons__background.ITCH-block{
+  background: var(--purple-pink-gradient)
+}
+
+
+.platforms-section--icons__glass{
+  position: absolute;
+
+  border-radius: 10px;
+
+  backdrop-filter: blur(5px);
+}
+
+.platforms-section--icons__glass.front
+{
+  width: 100px;
+  height: 100px;
+
+  z-index: 10;
+
+  border: 1px solid rgba(0, 0, 0, .1);
+  top: 15px;
+  left: -10px;
+}
+
+.platforms-section--icons__glass.back
+{
+  width: 50px;
+  height: 50px;
+
+  z-index: 11;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, .1);
+  top: -20px;
+  left: 55px;
+}
+
+
+.front.platforms-section--icons__glass::before{
+  position: absolute;
+
+  content: '';
+
+  background-size: 100% 100%;
+}
+
+.discord-block .front.platforms-section--icons__glass::before{
+  top: 20px;
+  left: 15px;
+
+  width: 75%;
+  height: 60%;
+
+  background-image:url(../assets/discord.png);
+}
+
+.ITCH-block .front.platforms-section--icons__glass::before{
+  top: 20px;
+  left: 15px;
+
+  width: 70%;
+  height: 60%;
+
+  background-image: url(../assets/Itch.png);
+}
+
+/* Кастомы для второй секции (блочки) */
+
+.decor-block{
+  position: absolute;
+
+  z-index: 1;
+
+  border-radius: 15px;
+}
+
+/* размер */
+
+.decor-block.small{
+  width: 50px;
+  height: 50px;
+}
+
+.decor-block.medium{
+  width: 80.5px;
+  height: 80.5px;
+}
+
+.decor-block.big{
+  width: 90px;
+  height: 90px;
+}
+
+/* Цвет */
+
+.decor-block.purple{
+  background: var(--purple-pink-gradient);
+}
+
+.decor-block.yellow{
+  background: var(--yellow-blue-gradient);
+}
+
+.decor-block.glass{
+  z-index: 12;
+
+  border: 1px solid rgba(0, 0, 0, .1);
+  background: rgba(255, 255, 255, .1);
+  backdrop-filter: blur(5px);
+}
+
+/* Позиция */
+
+.decor-block.position-1{
+  bottom: -100px;
+  left: 170px;
+}
+
+.decor-block.position-2{
+  bottom: -20px;
+  left: 410px;
+}
+
+.decor-block.position-3{
+  bottom: -105px;
+  left: 480px;
+}
+
+.decor-block.position-4{
+  bottom: -65px;
+  left: 430px;
+}
+
+.decor-block.position-5{
+  bottom: -110px;
+  left: 600px;
+}
+
+.decor-block.position-6{
+  bottom: -30px;
+  left: 480px;
+}
+
+.decor-block.position-7{
+  bottom: 20px;
+  left: 520px;
+}
+
+.decor-block.position-8{
+  bottom: 80px;
+  left: 579px;
+}
+
+
+/* Третья секция */
+
+.required-skills{
+  height: 800px;
 }
