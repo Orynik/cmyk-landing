@@ -1,0 +1,70 @@
+body{
+  background: #fff;
+}
+
+/* Dark-theme */
+
+.theme-dark{
+  --bg-color: #252525
+}
+
+
+/* Header */
+
+.hello-section{
+  height: 600px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-image: url(../assets/backgroundBox_1.png);
+}
+
+.header-navbar{
+  height:85px;
+  text-transform: uppercase;
+}
+
+.header-navbar--item__contest{
+  position: relative
+
+}
+
+.header-navbar--item__contest::before{
+  content: url(../assets/cup.png);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  left: -5px;
+}
+
+.preview-text{
+  height: inherit;
+  background-image: url(../assets/Wavy_Tech-12_Single-09\ [преобразованный].png);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position-x: 680px;
+}
+
+
+/* Вторая секция */
+
+.platforms-section{
+  height: 800px;
+  background-size: 20% 100%;
+  background-position-x: 100%;
+  background-repeat: no-repeat;
+  background-image: url(../assets/backgroundBox_2.png);
+}
+
+.about-platforms--title {
+  margin-top: 200px
+}
+
+.about-platforms--title::before{
+  background-image: url(../assets/cmyk.png);
+  background-size: 10px 20px;
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  content:"";
+}
