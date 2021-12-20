@@ -7,20 +7,17 @@
   --purple-pink-gradient: linear-gradient(-120deg,#209CFB,#FF3099);
   --footer-color_sun: rgba(37, 37, 37, 1);
   --footer-color_night: rgba(26, 26, 26, 1);
+  --dark-theme: #fff;
+  --dark-theme__text: #252525;
+
+  transition: background-color 2s;
 }
 
 body{
-  background: #fff;
+  background: var(--dark-theme);
 
   overflow-x: hidden;
 }
-
-/* Dark-theme */
-
-.theme-dark{
-  --bg-color: #252525
-}
-
 
 /* Header */
 
@@ -58,6 +55,10 @@ body{
   background-position: right;
 }
 
+.nav-link{
+
+}
+
 
 /* Вторая секция */
 
@@ -92,6 +93,8 @@ body{
 }
 
 .about-platforms--title {
+  color: var(--dark-theme__text);
+
   padding-top: 200px;
   padding-bottom: 50px;
   width: 650px;
@@ -111,6 +114,8 @@ body{
 .platforms-section--describe-text{
   margin-bottom: 50px;
   position: relative;
+
+  color: var(--dark-theme__text);
 
   width: 400px;
 }
@@ -348,6 +353,10 @@ body{
   background-image: url(../assets/section-skills.png);
 }
 
+.required-skill__title{
+  color: var(--dark-theme__text)
+}
+
 .skill-card-list{
   width: 67vw;
 }
@@ -504,6 +513,14 @@ body{
   background-image: url(../assets/backgroundBox_3.png);
 }
 
+.competition-procedure-section__title{
+  color: var(--dark-theme__text)
+}
+
+.number-block__title, .number-block__text{
+  color: var(--dark-theme__text);
+}
+
 .competition-procedure-section-steps{
   position: relative;
 
@@ -552,7 +569,7 @@ body{
   top: 190px;
   left: 350px;
 
-  width: 40%;
+  width: 100%;
   height: 60%;
   background-repeat: no-repeat;
   background-image: url(../assets/first-to-second.png);
@@ -565,12 +582,13 @@ body{
   top: 310px;
   left: 360px;
 
-  width: 80%;
+  width: 100%;
   height: 300px;
   background-size: 50%;
   background-repeat: no-repeat;
   background-image: url(../assets/secont-to-third.png);
 }
+
 
 .competition-procedure-section-steps--second{
   top: 190px;
@@ -592,4 +610,18 @@ body{
 
   content: '30';
   background: #EC4371;
+}
+
+@media screen and (max-width: 1300px) {
+  .competition-procedure-section::after{
+    width: 79%;
+  }
+  .competition-procedure-section::before{
+    width: 40%;
+  }
+
+  .competition-procedure-section-steps--second{
+    top: 179px;
+    right: 65px;
+  }
 }

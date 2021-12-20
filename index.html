@@ -38,7 +38,7 @@
           <a class="nav-link" href="#"><img width="15" height="15" src="src/assets/form.png">ЗАЯВКА</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"><img width="20" height="20" src="src/assets/night.png"></a>
+          <a class="nav-link"><img id="theme-swicher" width="25" height="25" src="src/assets/moon.svg"></a>
         </li>
       </ul>
     </header>
@@ -137,7 +137,7 @@
       </div>
     </div>
     <div class="required-skill d-flex flex-column align-items-center mt-5 pb-5">
-      <h4 class="py-5">Какие навыки нам нужны?</h4>
+      <h4 class="required-skill__title py-5">Какие навыки нам нужны?</h4>
       <div class="skill-card-list d-flex flex-row justify-content-between flex-wrap">
         <div class="skill-card-list--item">
           <i class="skill-card-list--item__icon game-design"></i>
@@ -233,8 +233,8 @@
     </div>
   </section>
   <section class="competition-procedure-section">
-    <div class="test d-flex flex-column align-items-center mt-5">
-      <h4>Порядок проведения конкурса</h4>
+    <div class="d-flex flex-column align-items-center mt-5">
+      <h4 class="competition-procedure-section__title">Порядок проведения конкурса</h4>
       <div class="competition-procedure-section-steps">
         <div class="competition-procedure-section-steps--first">
           <div class="competition-procedure-section-steps--number-block">
@@ -242,10 +242,10 @@
           <div class="decor-block yellow-no-grad small position-procedure-6"></div>
           <div class="decor-block glass big position-procedure-7"></div>
           <div class="decor-block red-no-grad medium position-procedure-8"></div>
-          <h5>
+          <h5 class="number-block__title">
             ОКТЯБРЯ
           </h5>
-          <span>
+          <span class="number-block__text">
             ПРИЕМ И РЕГИСТРАЦИ ЗАЯВОК
           </span>
         </div>
@@ -259,10 +259,10 @@
           <div class="decor-block red-no-grad medium position-procedure-3"></div>
           <div class="decor-block glass big position-procedure-4"></div>
           <div class="decor-block yellow-no-grad medium position-procedure-5"></div>
-          <h5>
+          <h5 class="number-block__title">
             ДЕКАБРЯ
           </h5>
-          <span>
+          <span class="number-block__text">
             ОКОНЧАНИЕ ПРИЕМА ЗАЯВОК
           </span>
         </div>
@@ -271,10 +271,10 @@
         <div class="competition-procedure-section-steps--third">
           <div class="competition-procedure-section-steps--number-block">
           </div>
-          <h5>
+          <h5 class="number-block__title">
             ДЕКАБРЯ
           </h5>
-          <span>
+          <span class="number-block__text">
             ОГЛАШЕНИЕ РЕЗУЛЬТАТОВ И НАГРАЖДАНИЕ
           </span>
         </div>
@@ -287,6 +287,7 @@
     </form>
   </section>
 
+  <script src="src/script/dark_theme.js"></script>
 </body>
 
 </html>
