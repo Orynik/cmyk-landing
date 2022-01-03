@@ -739,4 +739,28 @@ body{
 
 .partners{
   justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* Footer */
+
+.footer{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  padding: 0 5vw;
+
+  height: 15vh;
+  background: #252525;
+  color: white;
+}
+
+.footer-body{
+  width: 100%;
+}
+
+.footer-contacts{
+  width: 300px;
 }

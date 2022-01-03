@@ -1,8 +1,0 @@
-.partners{
-    justify-content: center;
-}
-
-.partners-image:not(:last-child){
-    margin-bottom: 150px;
-}
-
