@@ -14,5 +14,6 @@ darkItemSwitcher.addEventListener('click',(event) => {
     document.documentElement.style.setProperty('--dark-theme','#fff')
     document.documentElement.style.setProperty('--dark-theme__text','#252525')
   }
+  
   isSwitchOn = !isSwitchOn;
 })
