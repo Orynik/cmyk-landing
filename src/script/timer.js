@@ -3,6 +3,8 @@
 const dateEnd = new Date('12-30-2022')
 const timer = document.getElementById('timer')
 
+//TODO: Добавить проверку на день/дни
+//TODO: Добавить проверку на двузначные, однозначные часы/минуты/секунды
 let counting = () => {
     //Вычисление даты
     let timeDiff = Math.abs(dateEnd.getTime() - new Date().getTime())

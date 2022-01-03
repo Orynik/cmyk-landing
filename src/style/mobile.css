@@ -33,3 +33,11 @@
 .footer_image{
   display: none;
 }
+
+.modal-text__desktop{
+  display: none;
+}
+
+.modal-text__mobile{
+  display: inline;
+}

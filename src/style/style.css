@@ -23,6 +23,46 @@ body{
   overflow-x: hidden;
 }
 
+
+/* Modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1055;
+  display: block;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+}
+
+.show{
+  visibility: initial;
+}
+
+.modal-close{
+  position: relative;
+}
+
+.modal-close::before{
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 31px;
+  height: 31px;
+  background-image: url(../assets/close.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.modal-text__mobile {
+  display: none;
+}
 /* Header */
 
 .hello-section{
