@@ -1,0 +1,27 @@
+.form{
+  flex-direction: column;
+}
+
+.form-label{
+  padding: 0;
+  margin-right: 0;
+  margin-left: 10px;
+  margin-bottom: 0;
+  width: 350px;
+  text-align: left;
+  border: none;
+  background: transparent;
+}
+
+.form-label + .form-control{
+  padding: 10px 0 10px 15px;
+  margin-bottom: 0;
+}
+
+.partners{
+  justify-content: center;
+}
+
+.partners-image:not(:last-child){
+  margin-bottom: 150px;
+}

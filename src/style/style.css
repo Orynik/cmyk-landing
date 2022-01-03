@@ -26,20 +26,16 @@ body{
 /* Header */
 
 .hello-section{
+  margin-bottom: 100px;
+
   height: 600px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-image: url(../assets/backgroundBox_1.png);
 }
 
-.header-navbar{
-  height:85px;
-  text-transform: uppercase;
-}
-
 .header-navbar--item__contest{
   position: relative
-
 }
 
 .header-navbar--item__contest::before{
@@ -60,9 +56,55 @@ body{
 }
 
 .nav-link{
-
+  position: relative;
 }
 
+.nav-link::before{
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: -2px;
+  width: 14px;
+  height: 14px;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: 0;
+}
+
+.nav-link_cup.nav-link::before{
+  background-image: url('../assets/cup.png');
+}
+
+.nav-link_social.nav-link::before{
+  background-image: url('../assets/social-network.png');
+}
+
+.nav-link_skill.nav-link::before{
+  background-image: url('../assets/skill.png');
+}
+
+.nav-link_calendar.nav-link::before{
+  background-image: url('../assets/calendar.png');
+}
+
+.nav-link_form.nav-link::before{
+  background-image: url('../assets/form.png');
+}
+
+/* Таймер отчета времени */
+
+.timer{
+  position: relative;
+}
+
+.timer-info{
+  position: absolute;
+  top:0;
+  left:0;
+
+  width: 100vw;
+}
 
 /* Вторая секция */
 
@@ -753,7 +795,7 @@ body{
   padding: 0 5vw;
 
   height: 15vh;
-  background: #252525;
+  background: #1A1A1A;
   color: white;
 }
 
@@ -764,3 +806,4 @@ body{
 .footer-contacts{
   width: 300px;
 }
+

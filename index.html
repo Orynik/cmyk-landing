@@ -13,6 +13,7 @@
   <!-- Скрипт YMAP -->
   <script src="https://api-maps.yandex.ru/2.1/?apikey=f995437f-03a2-48ba-a815-92262155fffd&lang=ru_RU"
     type="text/javascript"></script>
+  <!-- Стили -->
   <link type="text/css" rel="stylesheet" href="src/style/style.css">
   <link type="text/css" media="(max-width: 576px)" rel="stylesheet" href="src/style/mobile.css">
   <link type="text/css" media="(min-width: 576px) and (max-width: 768px)" rel="stylesheet" href="src/style/tablet.css">
@@ -30,22 +31,32 @@
 
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link" href="#"><img width="15" height="15" src="src/assets/cup.png">О КОНКУРСЕ</img></a>
+          <a class="nav-link nav-link_cup" href="#">
+            О КОНКУРСЕ
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><img width="15" height="15" src="src/assets/social-network.png">ПЛАТФОРМЫ</a>
+          <a class="nav-link nav-link_social" href="#">
+            ПЛАТФОРМЫ
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><img width="15" height="15" src="src/assets/skill.png">НАВЫКИ</a>
+          <a class="nav-link nav-link_skill" href="#">
+            НАВЫКИ
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><img width="15" height="15" src="src/assets/calendar.png">РАСПИСАНИЕ</a>
+          <a class="nav-link nav-link_calendar" href="#">
+            РАСПИСАНИЕ
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><img width="15" height="15" src="src/assets/form.png">ЗАЯВКА</a>
+          <a class="nav-link nav-link_form" href="#">
+            ЗАЯВКА
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"><img id="theme-swicher" width="25" height="25" src="src/assets/moon.svg"></a>
+          <a class="nav-link nav-link_moon"><img id="theme-swicher" width="25" height="25" src="src/assets/moon.svg"></a>
         </li>
       </ul>
     </header>
@@ -67,6 +78,18 @@
     </section>
   </section>
   <section class="platforms-section">
+    <div class="d-flex align-items-start">
+      <div class="timer">
+        <div class="timer-info">
+          <h2 class="text-center">
+            ДО КОНЦА ПРИНЯТИЯ ЗАЯВОК ОСТАЛОСЬ
+          </h2>
+          <span class="d-block text-center" id="timer">
+            00 дней 00:00:00
+          </span>
+        </div>
+      </div>
+    </div>
     <div class="about-platforms">
       <h3 class="about-platforms--title w-50">
         КОНКУРС ПРОВОДИТСЯ
@@ -378,7 +401,8 @@
   </footer>
 
   <script src="src/script/dark_theme.js"></script>
-  <script src="src/script/map.js"></script>
+  <script src="src/script/timer.js"></script>
+<!--  <script src="src/script/map.js"></script>-->
 </body>
 
 </html>
