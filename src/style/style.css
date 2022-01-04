@@ -41,12 +41,10 @@ body{
   outline: 0;
 }
 
-.modal-body{
+.modal-body {
   height: 448px;
   justify-content: center;
 }
-
-
 
 .show{
   visibility: initial;
@@ -245,7 +243,24 @@ body{
   padding-bottom: 50px;
   width: 650px;
 
+  font-weight: 900;
+  font-size: 1.7em;
+
   text-align: center;
+}
+
+.platforms-section--describe-title{
+  font-weight: 300;
+  font-size: 1.8em;
+}
+
+.platforms-section--describe-text_wrapper > span{
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+.platforms-section--describe-text_wrapper{
+  margin-left: 20px;
 }
 
 .platforms-section--describe
@@ -500,7 +515,17 @@ body{
 }
 
 .required-skill__title{
-  color: var(--dark-theme__text)
+  color: var(--dark-theme__text);
+
+  font-weight: 900;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.skill-card-list--item > span{
+  font-weight: 400;
+  font-size: 0.9em;
 }
 
 .skill-card-list{
@@ -659,11 +684,26 @@ body{
 }
 
 .competition-procedure-section__title{
-  color: var(--dark-theme__text)
+  color: var(--dark-theme__text);
+
+  font-weight: 900;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .number-block__title, .number-block__text{
   color: var(--dark-theme__text);
+}
+
+.number-block__title{
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+.number-block__text{
+  font-weight: 400;
+  font-size: 1em;
 }
 
 .competition-procedure-section-steps{
@@ -773,6 +813,21 @@ body{
 
 /* форма заявки */
 
+.form-section-title{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+.form-section-title_advice{
+  text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic;
+  color: #B5B5B5;
+}
+
 .form-label{
   padding: 15px 30px 15px 30px;
   margin-right: 25px;
@@ -782,6 +837,9 @@ body{
   border: 1px solid #000;
   border-radius: 10px;
   background: #EAEAEACC;
+  font-size: 0.8em;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .form-label + .form-control{
@@ -791,6 +849,9 @@ body{
   border-radius: 10px;
   background: #EAEAEACC;
   text-overflow: ellipsis;
+  font-size: 0.8em;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .form__button{
@@ -798,7 +859,10 @@ body{
   margin-top: 20px;
   border-radius: 20px;
   width: 160px;
-  height: 43px;
+  height: 60px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 /* Карта */
@@ -810,6 +874,12 @@ body{
   margin-top: 70px;
 
   background-color: #fff;
+}
+
+.our-location > h4{
+  font-size: 2em;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 #map{
@@ -853,7 +923,19 @@ body{
 }
 
 .address_title{
+  margin-top: 5px;
   margin-bottom: 34px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.address_address,
+.address_phone,
+.address_email{
+  font-size: 1em;
+  font-weight: 400;
+  line-height:18px;
 }
 
 .address_phone,
@@ -877,7 +959,7 @@ body{
   content: '';
   position: absolute;
   z-index: 3;
-  left: -37px;
+  left: -52px;;
   width: 24px;
   height: 32px;
   background-image: url('../assets/email.png');
@@ -900,28 +982,11 @@ body{
   border: #484848 1px solid;
 }
 
-.address > p{
-  font-size:16px;
-  line-height:18px;
-  font-weight:400;
-  color:#666;
-}
-
-.address > h2{
-  margin-top: 5px;
-
-  font-size:18px;
-  line-height:30px;
-  font-weight:700;
-  text-transform: uppercase;
-}
-
 .modal-call{
   margin-top: 20px;
   width: 200px;
+  line-height: 47px;
 }
-
-
 
 /* Partners */
 
@@ -952,6 +1017,16 @@ body{
   height: 15vh;
   background: #1A1A1A;
   color: white;
+}
+
+.footer-contacts_title > span{
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+.footer-contacts_info > span{
+  font-weight: 400;
+  font-size: 0.8em;
 }
 
 .footer-body{
