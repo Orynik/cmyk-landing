@@ -814,6 +814,7 @@ body{
 /* форма заявки */
 
 .form-section-title{
+  color: var(--dark-theme__text);
   text-align: center;
   text-transform: uppercase;
   font-size: 2em;
@@ -872,11 +873,10 @@ body{
 
   height: 500px;
   margin-top: 70px;
-
-  background-color: #fff;
 }
 
 .our-location > h4{
+  color: var(--dark-theme__text);
   font-size: 2em;
   font-weight: 900;
   text-transform: uppercase;
