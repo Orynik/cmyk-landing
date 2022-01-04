@@ -21,3 +21,7 @@
 .competition-procedure-section::before{
     background: none;
 }
+
+.header-navber_wrapper, .navbar > .container-fluid {
+    justify-content: end;
+}

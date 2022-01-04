@@ -115,7 +115,7 @@ body{
 
 .preview-text{
   height: inherit;
-  background-image: url(../assets/Wavy_Tech-12_Single-09\ [преобразованный].png);
+  background-image: url(../assets/image.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -177,6 +177,7 @@ body{
 
 .timer-info{
   top: -380px;
+  color: var(--dark-theme__text);
 }
 
 /* Таймер отчета времени */
@@ -1036,4 +1037,3 @@ body{
 .footer-contacts{
   width: 300px;
 }
-
