@@ -813,8 +813,8 @@ body{
   position: absolute;
   z-index: 3;
   left: -37px;
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   background-image: url('../assets/phone.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -835,9 +835,10 @@ body{
 .address {
   position: absolute;
   top: 59px;
-  left: 112px;
+  left: 80px;
   z-index: 2;
-  width: 300px;
+  height: 400px;
+  width: 350px;
 
   padding: 49.5px 43.5px;
 
