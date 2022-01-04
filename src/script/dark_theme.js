@@ -1,10 +1,15 @@
 "use strict"
 
-let darkItemSwitcher = document.getElementById('theme-swicher')
+let darkItemSwitcher1 = document.getElementById('theme-swicher-1')
+let darkItemSwitcher2 = document.getElementById('theme-swicher-2')
 
 let isSwitchOn = false;
 
-darkItemSwitcher.addEventListener('click',(event) => {
+darkItemSwitcher1.addEventListener('click',switchTheme)
+
+darkItemSwitcher2.addEventListener('click',switchTheme)
+
+function switchTheme(event){
   if(isSwitchOn){
     event.target.src = 'src/assets/sun.svg'
     document.documentElement.style.setProperty('--dark-theme','#252525')
@@ -14,6 +19,6 @@ darkItemSwitcher.addEventListener('click',(event) => {
     document.documentElement.style.setProperty('--dark-theme','#fff')
     document.documentElement.style.setProperty('--dark-theme__text','#252525')
   }
-  
+
   isSwitchOn = !isSwitchOn;
-})
+}

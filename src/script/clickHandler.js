@@ -29,3 +29,5 @@ modalFormClose.addEventListener('click', () => {
         modalForm.style.removeProperty('opacity')
     }, 300)
 })
+
+

@@ -41,3 +41,12 @@
 .modal-text__mobile{
   display: inline;
 }
+
+.nav-link::before{
+  left: -20px;
+}
+
+.preview-text{
+  background: none;
+}
+

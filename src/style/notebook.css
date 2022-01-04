@@ -1,0 +1,7 @@
+.nav-link::before{
+    left: -20px;
+}
+
+.preview-text{
+    background: none;
+}

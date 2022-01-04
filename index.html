@@ -30,7 +30,7 @@
         <i class="modal-close" id="modalClose"></i>
       </div>
       <div class="d-flex align-items-center flex-column">
-        <img src="src/assets/succes.png" width="300" height="300" alt="">
+        <img src="src/assets/success.png" width="300" height="300" alt="">
         <div class="modal-text__desktop">
           <p>ФОРМА УСПЕШНО ОТПРАВЛЕНА!</p>
         </div>
@@ -44,48 +44,59 @@
   <!-- Navbar -->
   <section class="hello-section">
     <header class="navbar container-fluid" name="navbar">
-      <a class="navbar-brand" href="#">
-        <img width="60" height="60" src="src/assets/cmyk.png"></img>
-      </a>
-
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link nav-link_cup" href="#">
-            О КОНКУРСЕ
+      <nav class="header-navbar navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img width="60" height="60" src="src/assets/cmyk.png"></img>
           </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-link_social" href="#">
-            ПЛАТФОРМЫ
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-link_skill" href="#">
-            НАВЫКИ
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-link_calendar" href="#">
-            РАСПИСАНИЕ
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-link_form" href="#">
-            ЗАЯВКА
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-link_moon"><img id="theme-swicher" width="25" height="25" src="src/assets/moon.svg"></a>
-        </li>
-      </ul>
+          <div class="d-flex">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="nav-link nav-link_moon d-block d-lg-none"><img id="theme-swicher-2" width="25" height="25" src="src/assets/moon.svg"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="header-navbar_list nav navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link nav-link_cup" href="#">
+                  О КОНКУРСЕ
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link_social" href="#">
+                  ПЛАТФОРМЫ
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link_skill" href="#">
+                  НАВЫКИ
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link_calendar" href="#">
+                  РАСПИСАНИЕ
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link_form" href="#">
+                  ЗАЯВКА
+                </a>
+              </li>
+              <li class="nav-item nav-item_night">
+                <a class="nav-link nav-link_moon d-none d-lg-block"><img id="theme-swicher-1" width="25" height="25" src="src/assets/moon.svg"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <section class="preview-text">
       <div class="preview-text--discribe w-50 pt-5 ps-5">
-        <h1>
+        <h1 class="d-block text-center">
           CREATE MEDIA
           FROM YOUR KNOWLEDGE!
         </h1>
-        <p>
+        <p class="d-none d-sm-none d-md-inline d-lg-inline">
           Если ты давно хотел сделать сайт своей мечты, настенный календарь с уникальным дизайном, настолку или
           видеоигру
           — это твой шанс отточить свои навыки в командной работе и создать классный проект!
