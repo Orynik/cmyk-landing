@@ -785,8 +785,51 @@ body{
   height: 360px;
 
   background-size: 50% 50%;
-  background-repeat: none ;
+  background-repeat: no-repeat ;
   background-image: url("../assets/map_tag.svg");
+}
+
+.address-without-map{
+  margin: auto;
+  width: 408px;
+  height: 437px;
+  padding: 49.5px 43.5px;
+  background-color: #fff;
+  text-align: center;
+  border: #484848 1px solid;
+}
+
+.address_title{
+  margin-bottom: 34px;
+}
+
+.address_phone,
+.address_email{
+  position: relative;
+}
+
+.address_phone::before{
+  content: '';
+  position: absolute;
+  z-index: 3;
+  left: -37px;
+  width: 32px;
+  height: 32px;
+  background-image: url('../assets/phone.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.address_email::before{
+  content: '';
+  position: absolute;
+  z-index: 3;
+  left: -37px;
+  width: 24px;
+  height: 32px;
+  background-image: url('../assets/email.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .address {
@@ -799,6 +842,8 @@ body{
   padding: 49.5px 43.5px;
 
   background-color: #fff;
+  text-align: center;
+  border: #484848 1px solid;
 }
 
 .address > p{
@@ -818,6 +863,7 @@ body{
 }
 
 .modal-call{
+  margin-top: 20px;
   width: 200px;
 }
 

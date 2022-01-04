@@ -67,14 +67,19 @@
 }
 
 .platforms-section--describe-text_wrapper{
-  margin-top: 120px;
-  margin-left: -2%;
+  margin-top: -29px;
+  margin-left: 27%;
+  margin-bottom: 12%;
   text-align: center;
 }
 
 .platforms-section--icons{
-  top: -26px;
-  left: 142px;
+  top: -24px;
+  left: -23px;
+}
+
+.platforms-section--icons__background{
+  margin-left: 5vw;
 }
 
 /*4:25*/
