@@ -115,7 +115,7 @@ body{
 
 .preview-text{
   height: inherit;
-  background-image: url(../assets/image.svg);
+  background-image: url(../assets/Image.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
