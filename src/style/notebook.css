@@ -5,3 +5,19 @@
 .preview-text{
     background: none;
 }
+
+.competition-procedure-section-steps--first,
+.competition-procedure-section-steps--second,
+.competition-procedure-section-steps--third{
+    left: 44%;
+    right: 0;
+}
+
+.competition-procedure-section-steps--third{
+    top: 300px;
+}
+
+.competition-procedure-section::after,
+.competition-procedure-section::before{
+    background: none;
+}

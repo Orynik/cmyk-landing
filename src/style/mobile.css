@@ -50,3 +50,45 @@
   background: none;
 }
 
+.decor-block{
+  display: none
+}
+
+.competition-procedure-section-steps--first,
+.competition-procedure-section-steps--second,
+.competition-procedure-section-steps--third{
+  left: 44%;
+  right: 0;
+}
+
+.competition-procedure-section-steps--third{
+  top: 300px;
+}
+
+.competition-procedure-section::after,
+.competition-procedure-section::before{
+  background: none;
+}
+
+.skill-card-list--item span{
+  width: 100%
+}
+
+.platforms-section--describe-text{
+  width:70%;
+}
+
+.platforms-section--describe{
+  margin-left: 0
+}
+
+.platforms-section--describe-text_wrapper{
+  margin-top: 120px;
+  margin-left: -2%;
+  text-align: center;
+}
+
+.platforms-section--icons{
+  top: -26px;
+  left: 142px;
+}
