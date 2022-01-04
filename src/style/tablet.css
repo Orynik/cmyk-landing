@@ -66,6 +66,16 @@
   margin-left: 0
 }
 
+.platforms-section::before{
+  display: none;
+  background: none;
+}
+
+
+.required-skill{
+  background: none;
+}
+
 .platforms-section--describe-text_wrapper{
   margin-top: -29px;
   margin-left: 27%;
@@ -87,7 +97,24 @@
 }
 
 .timer-info{
-  top: -67px;
+  top: 109px;
+}
+
+.header-navber_wrapper,
+.navbar > .container-fluid{
+  justify-content: end;
+}
+
+.header-navbar_list{
+  align-items: start;
+  padding-left: 20px;
+}
+
+.header-navbar_list{
+  width: 100%;
+  justify-content: start;
+  align-items: start;
+  padding-left: 20px;
 }
 
 .hello-section{
