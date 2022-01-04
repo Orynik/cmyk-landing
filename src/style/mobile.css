@@ -96,3 +96,25 @@
 .platforms-section--icons__background{
   margin-left: -15vw;
 }
+
+.preview-text--discribe{
+  width: 100%;
+  font-size: 1em;
+}
+
+.timer-info{
+  top: -67px;
+}
+
+.hello-section{
+  margin-bottom: 0;
+  height: 461px;
+}
+
+.timer-info > h2{
+  font-size: 1em;
+}
+
+.timer-info > span{
+  font-size: 1.8em;
+}

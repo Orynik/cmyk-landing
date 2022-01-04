@@ -4,6 +4,7 @@
 
 body{
   overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
 }
 
 :root{
@@ -109,8 +110,11 @@ body{
   background-position: right;
 }
 
-.nav-link{
+.navbar-light .navbar-nav .nav-link{
   position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  color: #252525;
 }
 
 .nav-link::before{
@@ -146,6 +150,24 @@ body{
   background-image: url('../assets/form.png');
 }
 
+.preview-text--discribe{
+  width: 100%;
+}
+
+.preview-text--discribe > h1{
+  font-size: 2.2em;
+  font-weight: 900;
+}
+
+.preview-text--discribe > p{
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.timer-info{
+  top: -380px;
+}
+
 /* Таймер отчета времени */
 
 .timer{
@@ -159,6 +181,16 @@ body{
   left:0;
 
   width: 100vw;
+}
+
+.timer-info > h2{
+  font-weight: 900;
+  font-size: 2.3em;
+}
+
+.timer-info > span{
+  font-weight: 900;
+  font-size: 3em;
 }
 
 /* Вторая секция */
@@ -790,13 +822,13 @@ body{
 }
 
 .address-without-map{
-  margin: auto;
+  margin: 76px auto 0 auto;
   width: 408px;
   height: 437px;
   padding: 49.5px 43.5px;
   background-color: #fff;
   text-align: center;
-  border: #484848 1px solid;
+  border: 1px solid #000;
 }
 
 .address_title{
@@ -834,7 +866,7 @@ body{
 
 .address {
   position: absolute;
-  top: 59px;
+  top: 120px;
   left: 80px;
   z-index: 2;
   height: 400px;
